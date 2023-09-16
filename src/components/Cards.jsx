@@ -9,7 +9,10 @@ function Cards({ title, tags, content, author, category, date }) {
             <div className="">
                 <h1 className='font-bold text-black text-2xl py-2 font-[kanit]'>{title}</h1>
                 <p className=' py-1'>By <i>{author}</i></p>
-                <h3 className='font-[Cinzel] font-bold tracking-wider text-red-500'>Posted on <span>{date}</span></h3>
+                <div className='flex justify-between py-3'>
+                    <h3 className='font-[Cinzel] font-bold tracking-wider text-red-500'>Posted on <span>{date}</span></h3>
+                    <p>Catergory: <span className='underline font-bold tracking-wider'>{category}</span> </p>
+                </div>
             </div>
             <div>
                 <p className='font-[Merriweather] py-3'>{content}</p>

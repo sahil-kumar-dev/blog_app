@@ -26,11 +26,6 @@ function AppContextProvider({ children }) {
     }
 
 
-    function handlePageChange(pageNumber) {
-        setpageNumber(pageNumber);
-        fetchBlogs(pageNumber)
-    }
-
     const value = {
         isLoading,
         setisLoading,
@@ -40,8 +35,7 @@ function AppContextProvider({ children }) {
         setblogPosts,
         TotalPages,
         setTotalPages,
-        fetchBlogs,
-        handlePageChange
+        fetchBlogs
     }
 
     return < AppContext.Provider value={value} >
